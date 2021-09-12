@@ -1,80 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-container">
+        <div class="header">
+          <img src="images/image-jeremy.png" alt="Profile Picture" />
+          <div class="header-text">
+            <span class="report">Report for</span>
+            <div class="name">Jeremy Robson</div>
+          </div>
+        </div>
+        <div class="time-period">
+          <span>Daily</span>
+          <span>Weekly</span>
+          <span>Monthly</span>
+        </div>
+      </div>
+      <div class="cards-container">
+        <!-- Work Card -->
+        <div class="card-container">
+          <div class="background-card" id="work-background"></div>
+          <div class="small-card">
+            <div class="top-card">
+              <span>Work</span>
+              <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+            </div>
+            <div class="bottom-card">
+              <span class="current">1 hr</span>
+              <span class="previous">Yesterday - 2 hrs</span>
+            </div>
+          </div>
+        </div>
 
-  Report for
-  Jeremy Robson
+        <!-- Play Card -->
+        <div class="card-container">
+          <div class="background-card" id="play-background"></div>
+          <div class="small-card">
+            <div class="top-card">
+              <span>Play</span>
+              <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+            </div>
+            <div class="bottom-card">
+              <span class="current">1 hr</span>
+              <span class="previous">Yesterday - 2 hrs</span>
+            </div>
+          </div>
+        </div>
 
-  Daily
-  Weekly
-  Monthly
+        <!-- Study Card -->
+        <div class="card-container">
+          <!-- Card with background image -->
+          <div class="background-card" id="study-background"></div>
+          <div class="small-card">
+            <div class="top-card">
+              <span>Study</span>
+              <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+            </div>
+            <div class="bottom-card">
+              <span class="current">0 hrs</span>
+              <span class="previous">Yesterday - 1 hrs</span>
+            </div>
+          </div>
+        </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <!-- Exercise Card -->
+        <div class="card-container">
+          <!-- Card with background image -->
+          <div class="background-card" id="exercise-background"></div>
+          <div class="small-card">
+            <div class="top-card">
+              <span>Exercise</span>
+              <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+            </div>
+            <div class="bottom-card">
+              <span class="current">1 hr</span>
+              <span class="previous">Yesterday - 1 hr</span>
+            </div>
+          </div>
+        </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+        <!-- Social Card -->
+        <div class="card-container">
+          <!-- Card with background image -->
+          <div class="background-card" id="social-background"></div>
+          <div class="small-card">
+            <div class="top-card">
+              <span>Social</span>
+              <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+            </div>
+            <div class="bottom-card">
+              <span class="current">1 hr</span>
+              <span class="previous">Yesterday - 3 hrs</span>
+            </div>
+          </div>
+        </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Self Care Card -->
+        <div class="card-container">
+          <!-- Card with background image -->
+          <div class="background-card" id="selfcare-background"></div>
+          <div class="small-card">
+            <div class="top-card">
+              <span>Self Care</span>
+              <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+            </div>
+            <div class="bottom-card">
+              <span class="current">0 hrs</span>
+              <span class="previous">Yesterday - 1 hr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,134 @@
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $very-dark-blue;
+  font-family: "Rubik", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+
+  .header-container {
+    width: 90%;
+    margin-bottom: 1em;
+    .header {
+      background-color: $primary-blue;
+      color: white;
+      display: flex;
+      align-items: center;
+      border-radius: 5%;
+      padding: 2em 1em;
+
+      img {
+        height: 5em;
+        width: 5em;
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+
+      .header-text {
+        padding-left: 1em;
+
+        .name {
+          font-size: 1.5em;
+          padding-top: 0.5em;
+        }
+      }
+    }
+    .time-period {
+      background-color: $dark-blue;
+      color: $desaturated-blue;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2em 1em;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+    }
+  }
+
+  .cards-container {
+    width: 90%;
+    .card-container {
+      color: white;
+      margin-bottom: 1em;
+
+      .background-card {
+        height: 2em;
+        width: 100%;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background-repeat: no-repeat;
+        background-position: right top;
+      }
+
+      .small-card {
+        background-color: $dark-blue;
+        border-radius: 5%;
+        font-weight: 300;
+        padding: 1em;
+
+        .top-card {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .bottom-card {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 0.5em;
+
+          .current {
+            font-size: 2em;
+          }
+
+          .previous {
+            color: $pale-blue;
+          }
+        }
+      }
+
+      #work-background {
+        background-color: $light-red;
+        background-image: url("/images/icon-work.svg");
+      }
+
+      #play-background {
+        background-color: $soft-blue;
+        background-image: url("/images/icon-play.svg");
+      }
+
+      #study-background {
+        background-color: $light-red-study;
+        background-image: url("/images/icon-study.svg");
+      }
+
+      #exercise-background {
+        background-color: $lime-green;
+        background-image: url("/images/icon-exercise.svg");
+      }
+
+      #social-background {
+        background-color: $violet;
+        background-image: url("/images/icon-social.svg");
+      }
+
+      #selfcare-background {
+        background-color: $soft-orange;
+        background-image: url("/images/icon-self-care.svg");
+      }
+    }
+  }
+}
