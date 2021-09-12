@@ -54,6 +54,16 @@ body {
       padding: 2em 1em;
       border-bottom-left-radius: 5%;
       border-bottom-right-radius: 5%;
+
+      #daily,
+      #weekly,
+      #monthly {
+        cursor: pointer;
+      }
+
+      .active {
+        color: $pale-blue;
+      }
     }
   }
 
@@ -132,3 +142,5 @@ body {
     }
   }
 }
+
+@import "desktop";

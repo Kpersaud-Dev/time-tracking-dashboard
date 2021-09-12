@@ -1,0 +1,74 @@
+@media only screen and (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-flow: row wrap;
+
+    .header-container {
+      width: 15%;
+      padding-right: 1em;
+
+      .header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        img {
+          margin-left: 1em;
+        }
+
+        .header-text {
+          .report {
+            display: block;
+            padding-top: 1em;
+          }
+
+          .name {
+            font-size: 3em;
+            width: 50%;
+          }
+        }
+      }
+
+      .time-period {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+
+      .time-period > * {
+        padding: 0.75em;
+      }
+    }
+
+    .cards-container {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-row-gap: 1em;
+      grid-column-gap: 1em;
+
+      .card-container {
+        .background-card {
+          height: 3em;
+        }
+
+        .small-card {
+          height: 12em;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+
+          .bottom-card {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            padding-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+}

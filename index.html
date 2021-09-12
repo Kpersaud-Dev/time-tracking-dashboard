@@ -12,6 +12,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="script.js" defer></script>
 
     <title>Time tracking dashboard</title>
   </head>
@@ -26,9 +27,9 @@
           </div>
         </div>
         <div class="time-period">
-          <span>Daily</span>
-          <span>Weekly</span>
-          <span>Monthly</span>
+          <span id="daily">Daily</span>
+          <span id="weekly">Weekly</span>
+          <span id="monthly">Monthly</span>
         </div>
       </div>
       <div class="cards-container">
@@ -41,8 +42,10 @@
               <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
             </div>
             <div class="bottom-card">
-              <span class="current">1 hr</span>
-              <span class="previous">Yesterday - 2 hrs</span>
+              <div class="current" id="current-work-time">1 hr</div>
+              <div class="previous" id="previous-work-time">
+                Yesterday - 2 hrs
+              </div>
             </div>
           </div>
         </div>
@@ -56,8 +59,10 @@
               <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
             </div>
             <div class="bottom-card">
-              <span class="current">1 hr</span>
-              <span class="previous">Yesterday - 2 hrs</span>
+              <div class="current" id="current-play-time">1 hr</div>
+              <div class="previous" id="previous-play-time">
+                Yesterday - 2 hrs
+              </div>
             </div>
           </div>
         </div>
@@ -72,8 +77,10 @@
               <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
             </div>
             <div class="bottom-card">
-              <span class="current">0 hrs</span>
-              <span class="previous">Yesterday - 1 hrs</span>
+              <span class="current" id="current-study-time">0 hrs</span>
+              <span class="previous" id="previous-study-time"
+                >Yesterday - 1 hrs</span
+              >
             </div>
           </div>
         </div>
@@ -88,8 +95,10 @@
               <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
             </div>
             <div class="bottom-card">
-              <span class="current">1 hr</span>
-              <span class="previous">Yesterday - 1 hr</span>
+              <span class="current" id="current-exercise-time">1 hr</span>
+              <span class="previous" id="previous-exercise-time"
+                >Yesterday - 1 hr</span
+              >
             </div>
           </div>
         </div>
@@ -104,8 +113,10 @@
               <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
             </div>
             <div class="bottom-card">
-              <span class="current">1 hr</span>
-              <span class="previous">Yesterday - 3 hrs</span>
+              <span class="current" id="current-social-time">1 hr</span>
+              <span class="previous" id="previous-social-time"
+                >Yesterday - 3 hrs</span
+              >
             </div>
           </div>
         </div>
@@ -120,8 +131,10 @@
               <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
             </div>
             <div class="bottom-card">
-              <span class="current">0 hrs</span>
-              <span class="previous">Yesterday - 1 hr</span>
+              <span class="current" id="current-care-time">0 hrs</span>
+              <span class="previous" id="previous-care-time"
+                >Yesterday - 1 hr</span
+              >
             </div>
           </div>
         </div>
