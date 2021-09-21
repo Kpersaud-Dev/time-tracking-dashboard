@@ -2,17 +2,20 @@
   .main-container {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 
     .header-container {
-      width: 15%;
+      width: 18%;
       padding-right: 1em;
-
+      height: 100%;
       .header {
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
-
+        padding-right: 1em;
+        height: 100%;
         img {
           margin-left: 1em;
         }
@@ -35,6 +38,7 @@
         flex-flow: column wrap;
         align-items: flex-start;
         justify-content: space-around;
+        height: 100%;
       }
 
       .time-period > * {

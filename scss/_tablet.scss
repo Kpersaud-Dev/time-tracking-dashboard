@@ -1,7 +1,9 @@
 @media only screen and (min-width: 768px) {
   .main-container {
     .header-container {
+      height: 100%;
       .header {
+        padding-right: 1em;
         .header-text {
           .name {
             font-size: 2em;
